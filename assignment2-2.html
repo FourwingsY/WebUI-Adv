@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<ul>
+<li>선식
+<li>토마토
+<li>마늘
+</ul>
+
+<script>
+	var obj = {
+		strTexts:"은 정말 몸에 좋아요 ^^",
+		registerEvents : function(element) {
+			console.log(element);
+			element.addEventListener("click", function() {
+				var text = element.innerText;
+				console.log(text + this.strTexts);
+			}.bind(this))
+		}
+	};
+
+	var listItems = document.querySelectorAll("li");
+	console.log(listItems)
+	for (var i=0; i<listItems.length; i++) {
+		var item = listItems[i];
+		obj.registerEvents(item);
+	}
+</script>
