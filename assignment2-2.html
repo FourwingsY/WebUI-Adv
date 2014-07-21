@@ -13,10 +13,12 @@
 			element.addEventListener("click", function() {
 				var text = element.innerText;
 				console.log(text + this.strTexts);
+                                //잘했음.
 			}.bind(this))
 		}
 	};
 
+        //참고로 아래 코드를 registerEvents 안으로 옮겨서 구현할 수도 있겠음.
 	var listItems = document.querySelectorAll("li");
 	console.log(listItems)
 	for (var i=0; i<listItems.length; i++) {

@@ -30,6 +30,8 @@ heySmith();			// Hey, John	// this is window
  * now it's global funtion.
  */
 
+//이건 그냥 smith.sayName() 이겠구먼.
+//call의 동작방식을 잘 이해한 것으로 보임.
 heySmith.call(smith);	// Hey, Smith 	// this is smith
 /*
  * if you want to see "Hey, Smith" then
